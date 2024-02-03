@@ -55,4 +55,20 @@ To deploy NGINX on AWS ECS and set up the infrastructure, follow the steps below
    ```bash
    git clone https://github.com/DaniyaDi/project-2.git
 
-2. 
+2. Navigate to the project directory:
+   ```bash
+   cd project
+3. Customize the Terraform variables in variables.tf to match your requirements.
+4. Run the Terraform commands:
+   ```bash
+   terraform init
+   terraform plan
+   terraform apply -auto-approve
+5. Monitor the Terraform deployment process
+6. Access your NGINX application through the Application Load Balancer (ALB): Once the deployment is complete, the NGINX application
+   will be accessible through the ALB. Obtain the ALB DNS name or IP address from the AWS Management Console.
+   ```bash
+   Example ALB URL: http://your-alb-dns-name-or-ip
+
+
+
